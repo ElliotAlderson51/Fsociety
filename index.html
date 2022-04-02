@@ -32,6 +32,7 @@
             <a href="#" id="home_id">Home</a>
             <a href="#" id="about_id">About</a>
             <a href="#" id="projects_id">Projects</a>
+            <a href="#" id="binaryexploitation_id">Binary Exploitation</a>
         </div>
 
         <div class="links">
@@ -153,6 +154,25 @@ ER28-0652.</p>
 
         </div>
 
+        <div class="binary_exploitation">
+          <hr>
+          <h1>Binary Exploitation - <a href="https://github.com/ElliotAlderson51/Exploit-Writeups">Exploit-Writeups</a> </h1><br>
+          <h2>Binary Exploitation Writeups - Windows Only</h2>
+          <p>Hey! recently I started to learn binary exploitation, and I practice by writing exploits for programs with known vulnerabilities.</p><br>
+
+          <p>
+
+            ✔️ <a href="https://github.com/ElliotAlderson51/Exploit-Writeups/tree/main/FreeFloat%20FTP%20Server">FreeFloat FTP Server </a> - Simple Buffer Overflow <br> <br>
+
+            ✔️ <a href="https://github.com/ElliotAlderson51/Exploit-Writeups/blob/main/Vulnserver/Exploit_TRUN.cpp">Vulnserver</a> - Simple Buffer Overflow <br> <br>
+            
+            ✔️ <a href="https://github.com/ElliotAlderson51/Exploit-Writeups/blob/main/Vulnserver/Exploit_GMON.cpp">Vulnserver</a> - Buffer Overflow SEH overwrite <br> <br>
+            
+            ✔️ <a href="https://github.com/ElliotAlderson51/Exploit-Writeups/tree/main/Konica%20Minolto%20FTP">Konica Minolta FTP Utility 1.00</a> - CWD Command Overflow (SEH) <br> 
+
+          </p>
+        </div>
+
       </div>
 
       <script>
@@ -175,6 +195,12 @@ ER28-0652.</p>
             'slow');
       });
 
+      $("#binaryexploitation_id").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".binary_exploitation").offset().top},
+            'slow');
+      });
+
       $("#go_to_FsocietyPhishingTool_id").click(function() {
         $('html,body').animate({
             scrollTop: $("#FsocietyPhishingTool_id").offset().top},
@@ -182,5 +208,6 @@ ER28-0652.</p>
       });
 
       </script>
+      <br><br><br>
   </body>
 </html>
