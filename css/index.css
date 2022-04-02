@@ -106,12 +106,12 @@
   font-family: 'Courier Prime', monospace;
 }
 
-.contents .projects .Project
+.contents  .Project
 {
   margin-top: 30px;
 }
 
-.contents .projects .Project ul li
+.contents .Project ul li
 {
   text-align: center;
   margin-top: 10px;
@@ -120,14 +120,14 @@
   list-style-type: none;
 }
 
-.contents .projects .Project video
+.contents .Project video
 {
   width: 500px;
   height: auto;
   margin-top: 10px;
 }
 
-.contents .projects .Project img
+.contents .Project img
 {
   width: 500px;
   height: auto;
@@ -149,7 +149,7 @@
     margin-left: 350px;
   }
 
-  .contents .projects .Project video, .contents .projects .Project img
+  .contents .Project video, .contents .projects .Project img
   {
     width: 400px;
     height: auto;
@@ -161,22 +161,4 @@
     margin: 0 auto;
     margin-top: 10px
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-a
-{
-
 }
