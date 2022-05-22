@@ -30,7 +30,6 @@
 
         <div class="options">
             <a href="#" id="home_id">Home</a>
-            <a href="#" id="about_id">About</a>
             <a href="#" id="projects_id">Projects</a>
             <a href="#" id="binaryexploitation_id">Binary Exploitation</a>
         </div>
@@ -160,6 +159,21 @@ ER28-0652.</p>
           <h2>Binary Exploitation Writeups - Windows Only</h2>
           <p>Hey! recently I started to learn binary exploitation, and I practice by writing exploits for programs with known vulnerabilities.</p><br>
 
+          <hr>
+
+          <p>Hey this is my first Exploit Writeup post for practice Binary Exploitation in Windows! I make for myself a folder with a lot of vulnerabilities software with
+            a random name like 48504 and then I choose one randomaly and start investigate the program and exploit it. <br><br>
+
+            <a href="/PCMAN's FTP Server 2.0 - 'USER' EIP overwrite.html">PCMAN's FTP Server 2.0 - 'USER' EIP overwrite.html</a>
+        </p>
+
+        <hr>
+            <p>More Soon... <br>
+        <hr>
+
+
+          <h2>GitHub Links</h2>
+
           <p>
             ✔️ <a href="https://github.com/ElliotAlderson51/Exploit-Writeups/tree/main/FreeFloat%20FTP%20Server" target="_blank">FreeFloat FTP Server </a> - Simple Buffer Overflow <br> <br>
             ✔️ <a href="https://github.com/ElliotAlderson51/Exploit-Writeups/blob/main/Vulnserver/Exploit_TRUN.cpp" target="_blank">Vulnserver</a> - Simple Buffer Overflow <br> <br>
@@ -172,27 +186,12 @@ ER28-0652.</p>
 
       <script>
 
+      $(".binary_exploitation").hide();
+      $(".projects").hide();
+
       $("#home_id").click(function() {
         $('html,body').animate({
             scrollTop: $(".home").offset().top},
-            'slow');
-      });
-
-      $("#about_id").click(function() {
-        $('html,body').animate({
-            scrollTop: $(".about").offset().top},
-            'slow');
-      });
-
-      $("#projects_id").click(function() {
-        $('html,body').animate({
-            scrollTop: $(".projects").offset().top},
-            'slow');
-      });
-
-      $("#binaryexploitation_id").click(function() {
-        $('html,body').animate({
-            scrollTop: $(".binary_exploitation").offset().top},
             'slow');
       });
 
@@ -200,6 +199,27 @@ ER28-0652.</p>
         $('html,body').animate({
             scrollTop: $("#FsocietyPhishingTool_id").offset().top},
             'slow');
+      });
+
+      $("#home_id").click(function()
+      {
+          $(".about").show();
+          $(".binary_exploitation").hide();
+          $(".projects").hide();
+      });
+
+      $("#binaryexploitation_id").click(function()
+      {
+          $(".binary_exploitation").show();
+          $(".about").hide();
+          $(".projects").hide();
+      });
+
+      $("#projects_id").click(function()
+      {
+          $(".projects").show();
+          $(".about").hide();
+          $(".binary_exploitation").hide();
       });
 
       </script>
