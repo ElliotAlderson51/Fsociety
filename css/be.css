@@ -1,0 +1,15 @@
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+pre
+{
+    background-color: rgb(243, 250, 249);
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    overflow-x: auto;
+}
