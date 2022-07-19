@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fsociety RAT</title>
+
+    <link rel="stylesheet" href="../css/be.css">
+    <link rel="stylesheet" href="../css/fonts.html">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+</head>
+<body>
+
+    <div class="sidenav">
+
+        <div class="profile_image">
+          <img src="../images/ElliotAlderson.png" alt=""><br>
+          <label>Elliot Alderson</label>
+        </div>
+
+        <div class="options">
+            <a href="../index.html">Go Back</a>
+        </div>
+
+        <div class="links">
+          <a href="https://github.com/ElliotAlderson51" target="_blank"> <img src="../images/GitHub-Logo.png"> </a>
+        </div>
+
+      </div> <!-- SideNave END -->
+
+    <div class="contents">
+
+        <h1>Fsociety-RAT</h1>
+
+        <p>
+            It was really fun to make this project! This project have a lot of great features and a very good website control for the bots. <br>
+            The final Malware will bypassing UAC, installing rootkit on 32 bit systems, obfuscated strings, Anti-VM technique, Process Hollowing , Communicate with the website control using CURL (curl is preinstalled in every windows!). 
+        </p>
+
+        <hr>
+
+        <h2>RAT</h2>
+
+        <h3>Malware Persistence Techniques</h3>
+
+        
+        ✔️ The malware hiding a DLL to bypass UAC and a Rootkit in new sections.    <br>
+        ✔️ Bypassing UAC using UAC hijacking on the program ComputerDefaults.exe in a "Windows " folder. <br>    
+        ✔️ Create a task for the malware in Task Schduler in the path "Microsoft\\Windows\\Security" with high privileges. <br>   
+        ✔️ If the system is 32-bit install and start the rootkit.    <br>
+        ✔️ If the system is 64-bit the malware will start Process Hollowing  <br>  
+        
+
+        <h3>Malware Attacks</h3>
+        <p>The malware communicate with a control website, this is the current attacks:</p>
+
+        
+        ✔️ Screenshot <br>   
+        ✔️ Task Scheduler <br>      
+        ✔️ Remote Shell <br>   
+        ✔️ File Manager <br>   
+        ✔️ File Explorer <br>   
+        ✔️ Keylogger <br>   
+        ✔️ Client Info <br>   
+
+        <h3>Website Control Images</h3>
+        <p><i>Main website control</i> - list the clients and show info about them</p>
+
+        <img src="images/Main.PNG">
+
+        <p><i> Victim profile page</i> - Contain the attacks options</p>
+
+        <img src="images/BotProfile.PNG">
+
+        <hr>
+
+        <h2>Rootkit</h2>
+        <p>The Rootkit is for 32-bit systems. <a href="https://github.com/ElliotAlderson51/Kernel-Rootkit-32Bit">Click to see the Rootkit project on GitHub</a></p>
+
+        <h3>What the Rootkit can do?</h3>
+
+        <h4>Hook the SSDT</h4>
+
+        ✔️ Protect Files (Read\Write\Create\Delete\Rename\Open\Execute) <br>    
+        ✔️ Hide Process <br>   
+        ✔️ Protect Process, Thread <br>    
+        ✔️ Protect Registry Keys (Open\Create\Delete\Set) <br>       
+        ✔️ Bypass privilege checks <br>
+        
+        <hr>
+
+        <h2>DLL - Bypass UAC</h2>
+        <p>Create a DLL that will be hijacked to ComputerDefaults to start the malware with high privilege.</p>  
+        <p><a href="https://github.com/ElliotAlderson51/Bypass-UAC">Click to see the BypassUAC project on GitHub</a></p> <br>
+
+        <hr>
+
+        <h2>section_injector</h2>
+
+        <p>This Projects will inject a file to new section in another file.</p> 
+
+        <pre>   Injector.exe "section name" "target" "file"</pre>
+
+        <hr>
+
+        <h2>Websites</h2>
+
+        <h3>Fsociety Control Website</h3>
+        <p>This is the Control Website the malware is communicate with to get the commands to execute.</p>
+
+        <h3>Fsociety Redirect Website</h3>
+        <p>This website have hardcoded url in the malware code, the malware will get the Control Website url from this website. <br>
+        I create this website so if there is a problem with the Control Website you can just upload the Control Website again and change the url in this website. </p>
+
+        <hr>
+
+        <h2>Sub Projects</h2>
+        <p>This solutions was helping me to build the final malware</p>
+
+        <h3>Initialize RAT</h3>
+        <p>This automated the build of the final malware.</p>
+
+        ✔️ UPX the DLL file <br>    
+        ✔️ Inject the DLL and the Rootkit to new sections. <br>
+
+        <h3>Encoding_Decoding</h3>
+        <p>This helps me to obfuscate the strings in the malware.</p>
+
+        <hr>
+
+        <h2>TODO</h2>
+
+        <p> <b>*</b> Obfuscate Imports</p>
+
+        <hr>
+
+        <p>This project is for <b><i>EDUCATIONAL PURPOSES ONLY</i></b>. You are the only responsable for your actions! <b> Happy Hacking (; </b> </p>
+    </div>
+
+    <br><br><br>
+</body>
+</html>

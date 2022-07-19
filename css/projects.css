@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3, h4
+{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3
+{
+    font-size: 25px;
+}
+
+br
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p
+{
+    font-size: 20px;
+}
