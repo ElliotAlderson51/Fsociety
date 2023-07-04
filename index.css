@@ -1,0 +1,367 @@
+* {
+
+    margin: 0;
+}
+
+body
+{
+    background-image: url("Images/Wallpaper.jpg");
+}
+
+nav {
+    width: 0, auto;
+    padding: 10px;
+    background-color: rgb(48, 40, 40);
+    font-family: ManiaFont;
+    overflow: hidden;
+}
+
+nav a{
+    float: left;
+    color: rgb(231, 231, 231);
+    font-size: 35px;
+    text-decoration: none;
+    width: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav a:hover
+{
+    color: white;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    nav{
+        text-align: center;
+    }
+
+    nav a{
+        width: 20%;
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    nav a:hover{
+        font-size: 30px;
+    }
+
+
+}
+
+
+
+.Elliot .Logo
+{
+    float: right;
+    margin: 30px;
+}
+
+.Elliot .Logo img
+{
+    text-align: center;
+    border: 7px solid rgb(105, 98, 98);
+    border-radius: 5px;
+}
+
+.Elliot .Logo img:hover
+{
+    width: 97%;
+    border-color: rgb(212, 203, 203);
+}
+
+.Elliot .Title
+{
+    float: left;
+    width: 65%;
+    margin-top: -50px;
+    height: 200px;
+    text-align: center;
+}
+
+.Elliot .Title label
+{
+    font-family: GlitchFont;    
+    font-size: 210px;
+    color: white;
+}
+
+.Elliot .Title label:hover
+{
+    font-family: GlitchFont;
+    -webkit-text-stroke: 2px black; /* width and color */
+}
+
+.Elliot .subTitle
+{
+    color: white;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: ManiaFont;
+    font-size: 40px;
+}
+
+.Elliot .AboutText, .Elliot .HireMeText, .ProjectsGallery, .beGallery
+{
+    display: none;
+}
+
+
+.Elliot .Text, .Elliot .AboutText, .Elliot .HireMeText
+{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.Elliot .Text p, .Elliot .AboutText p, .Elliot .HireMeText p
+{
+    color: white;
+    font-family: FsocietyFont;
+    font-size: 20px;
+}
+
+.ProjectsGallery .project, .beGallery .project{
+    margin: 20px;
+    width: 30%;
+    height: 20%;
+    background-color: white;
+    float: left;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.ProjectsGallery .project img, .ProjectsGallery .project video, .beGallery .project img
+{
+    width: 100%;
+    height: 250px;
+}
+
+@media only screen and (max-width: 1320px) {
+
+    .ProjectsGallery .project, .beGallery .project{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .ProjectsGallery .project, .beGallery .project{
+
+        margin: 0 auto;
+        margin-left: 55px;
+        margin-top: 20px;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .ProjectsGallery .project img, .ProjectsGallery .project video, .beGallery .project img{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ProjectsGallery .project img, .ProjectsGallery .project video, .beGallery .project img{
+        height: 150px;
+    }
+
+    .ProjectsGallery .project, .beGallery .project{
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ProjectsGallery .project, .beGallery .project{
+
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+}
+
+.ProjectsGallery .project a, .beGallery .project a
+{
+    font-family: ManiaFont;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.FsocietyRAT, .BypassUAC, .Rootkit, .PhishingTool, .BruteForce, .be1
+{
+    display: none;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.FsocietyRAT h1, .BypassUAC h1, .Rootkit h1, .PhishingTool h1, .BruteForce h1
+{
+    width: 100%;
+    text-align: center;
+    font-size: 150px;
+    font-family: GlitchFont;
+    color: white;
+    text-decoration: underline black;
+}
+
+.be1 h1{
+    font-family: ManiaFont;
+}
+
+.be1 h2{
+    text-decoration: underline white;
+}
+
+.be1 pre
+{
+    color: black;
+    background-color: rgb(243, 250, 249);
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    overflow-x: auto;
+}
+
+
+.BypassUAC h2, .Rootkit h2, .BruteForce h2
+{
+    font-family: ManiaFont;
+    text-align: center;
+    text-decoration: underline white;
+}
+
+.FsocietyRAT .Text, .BypassUAC .Text, .Rootkit .Text, .PhishingTool .Text, .BruteForce .Text, .be1 .Text
+{
+    color: white;
+    font-family: FsocietyFont;
+}
+
+.FsocietyRAT img, .PhishingTool img, .be1 img
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1360px) {
+    
+    .Elliot .Title
+    {
+        width: 50%;
+        margin-bottom: -50px;
+
+    }
+
+    .Elliot .subTitle
+    {
+        float: left;
+        margin-left: 40px;
+    }
+
+    .Elliot .Text{
+        float: left;
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    .Elliot .Title label {
+      font-size: 150px;
+    }
+  } 
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .Elliot .Title label{
+        font-size: 100px;
+    }
+
+    .Elliot .Title{
+        margin-bottom: -90px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .Elliot .subTitle
+    {
+        margin-left: 90px;
+    }
+
+    .Elliot .Text{
+        width: 40%;
+        margin-left: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .Elliot .Logo{
+        display: none;
+    }
+
+    .Elliot .Title{
+        font-size: 150px;
+        margin-top: -50px;
+        margin-bottom: -50px;
+        width: 100%;
+    }
+
+    .Elliot .subTitle{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .Elliot .Text{
+        width: 90%;
+        margin-left: 0px;
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+    .Elliot .Title label{
+        font-size: 80px;
+    }
+
+    .Elliot .Title label:hover{
+    -webkit-text-stroke: 0px black; /* width and color */
+    }
+
+    .Elliot .subTitle{
+        font-size: 30px;
+    }
+
+    .Elliot .Text p, .Elliot .AboutText p{
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
